@@ -19,7 +19,6 @@ from wordcount import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/',views.home,name='home'),
-    path('about/',views.about,name='about'),
-    path('hobbies/',views.Hobbies,name='hobbies'),
+    path('myhome/',views.home,name='home'),
+    path('about/',views.aboutus,name='about'),
 ]
