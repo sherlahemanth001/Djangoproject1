@@ -17,8 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from wordcount import views
 
+from django.conf.urls import include , url
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('myhome/',views.home,name='home'),
+    url('myblog.*/',include('myblog.urls')),  #include from blogs app urls
+    url('mycontacts.*/',include('mycontacts.urls')),
     path('about/',views.aboutus,name='about'),
+   
+    
 ]
