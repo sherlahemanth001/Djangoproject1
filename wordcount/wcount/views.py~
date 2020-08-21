@@ -6,8 +6,11 @@ def home(requests):
     return render(requests, 'wcount/home.html')
 
 def count(requests):
-    mytext=requests.GET['fulltext']
+    mytext=requests.GET['fulltext']  
     wcount=len(mytext.split())
-    return render(requests, 'wcount/count.html',{'mycount':wcount})
+    mylist=[('rn1','Amar'),('rn2','Srinivas'),('rn3','Ram'),('rn4','Shyam')]
+   
+    return render(requests, 'wcount/count.html',{'mycount':wcount ,'yourlist':mylist}
+)
 
 

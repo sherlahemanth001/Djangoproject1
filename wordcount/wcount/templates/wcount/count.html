@@ -1,4 +1,4 @@
-<a href="/">My Best Home</a>
+<a href="{% url 'home' % }">My Best Home</a>
 
 <h1>Your Result is></h1>
 {{mycount}}
@@ -8,3 +8,4 @@
 {{rn}} - {{name}}
 <br/>
 {% endfor %}
+
