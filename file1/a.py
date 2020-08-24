@@ -1,4 +1,4 @@
 print("HEMANTH")
-n=int(input("Enter a number:")
+n=10
 for i in range(n): 
     print(i)
