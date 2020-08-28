@@ -79,7 +79,7 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.mysql',
 
-        'NAME': 'myproject',
+        'NAME': 'myproject6',
 
         'USER' : 'root',
 
